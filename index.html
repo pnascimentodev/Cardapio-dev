@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="styles/output.css">
 </head>
 <body>
@@ -25,22 +25,342 @@
         </div> 
     </header>
 
-    <h2 class="text-2x1 md:text-3x1 font-bold text-center mt-9 mb-6">
-        Conheça o nosso Menu
+    <h2 class="text-4xl md:text-4xl font-bold text-center mt-9 mb-6">
+        Nossos Burguers
     </h2>
 
     <div id="menu">
 
-        <main>
-
-            <div>
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+    
+            <!-- PRODUTO-->
+            <div class="flex gap-2">
                 <img 
                     src="./assets/hamb-1.png" 
                     alt="Duplo Bacon"
-                    class="w-28 h-28 rounded-md"
-                    />
+                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+                />
+                <div>
+                    <p class="font-bold">JavaScript</p>
+                    <p class="text-sm">Dois burguers de 160g, queijo prato, e maionese da casa, pão brioche e salada a vontade.</p>
+        
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 18.90</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="JavaScript"
+                            data-price="18.90"
+                        >
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> 
+            <!-- FIM DO PRODUTO -->
+        
+            <!-- PRODUTO -->
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/hamb-2.png" 
+                    alt="Duplo Bacon"
+                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+                />
+                <div>
+                    <p class="font-bold">TypeScript</p>
+                    <p class="text-sm">Dois burguers de 160g, bacon, queijo cheddar, e maionese da casa, pão brioche e salada a vontade.</p>
+        
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 21.90</p>
+                        <button TypeScript" 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="TypeScript"
+                            data-price="21.90"
+                        >
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> 
+            <!-- FIM DO FIM DO PRODUTO -->
+
+            <!-- PRODUTO -->
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/hamb-3.png" 
+                    alt="Duplo Bacon"
+                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Node.js</p>
+                    <p class="text-sm">Dois smashs burguers de 120g, queijo cheddar, cream cheese, maionese da casa e pão brioche.</p>
+        
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 16.90</p>
+                        <button TypeScript" 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Nodejs"
+                            data-price="16.90"
+                        >
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> 
+            <!-- FIM DO FIM DO PRODUTO -->
+
+            <!-- PRODUTO -->
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/hamb-4.png" 
+                    alt="Duplo Bacon"
+                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Angular</p>
+                    <p class="text-sm">Frango empanado de 160g, picles, queijo prato, maionese da casa, pão brioche e salada a vontade.</p>
+        
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 25.90</p>
+                        <button TypeScript" 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Angular"
+                            data-price="25.90"
+                        >
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> 
+            <!-- FIM DO FIM DO PRODUTO -->
+
+                    <!-- PRODUTO -->
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/hamb-5.png" 
+                    alt="Duplo Bacon"
+                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Java</p>
+                    <p class="text-sm">Burguer de 160g, picles, queijo mussarela, cebola crisp, maionese da casa, pão brioche e salada a vontade.</p>
+        
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 32.90</p>
+                        <button TypeScript" 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Java"
+                            data-price="32.90"
+                        >
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> 
+            <!-- FIM DO FIM DO PRODUTO -->
+        <!-- PRODUTO-->
+        <div class="flex gap-2">
+            <img 
+                src="./assets/hamb-6.png" 
+                alt="Duplo Bacon"
+                class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+            />
+            <div>
+                <p class="font-bold">React</p>
+                <p class="text-sm">Dois smashs de 120g, queijo prato, ovo, maionese da casa, pão brioche e salada a vontade.</p>
+    
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 18.90</p>
+                    <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="React"
+                        data-price="18.90"
+                    >
+                        <i class="fas fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
             </div>
+        </div> 
+        <!-- FIM DO PRODUTO -->
+    
+        <!-- PRODUTO -->
+        <div class="flex gap-2">
+            <img 
+                src="./assets/hamb-7.png" 
+                alt="Duplo Bacon"
+                class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+            />
+            <div>
+                <p class="font-bold">Python</p>
+                <p class="text-sm">Burguer de 160g, bacon, onion rings, queijo cheddar, e maionese da casa e pão brioche.</p>
+    
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 22.90</p>
+                    <button TypeScript" 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Python"
+                        data-price="22.90"
+                    >
+                        <i class="fas fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div> 
+        <!-- FIM DO FIM DO PRODUTO -->
+
+        <!-- PRODUTO -->
+        <div class="flex gap-2">
+            <img 
+                src="./assets/hamb-8.png" 
+                alt="Duplo Bacon"
+                class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+            />
+            <div>
+                <p class="font-bold">.Net Vegan</p>
+                <p class="text-sm">Burguer vegano feito de soja, salada, cenoura, e maionese de abacate, pão feito de batata.</p>
+    
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 16.90</p>
+                    <button TypeScript" 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Node.j"
+                        data-price="16.90"
+                    >
+                        <i class="fas fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div> 
+        <!-- FIM DO FIM DO PRODUTO -->
+        
         </main>
+
+        <div class="mx-auto max-w-7x1 pc-2 my-2">
+            <h2 class="font-bold text-3x1 md:text-4xl text-center">Nossas bebidas</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/refri-1.png" 
+                    alt="Duplo Bacon"
+                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Coca Cola Lata</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6.50</p>
+                        <button TypeScript" 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Coca Lata"
+                            data-price="6.50"
+                        >
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/refri-2.png" 
+                    alt="Duplo Bacon"
+                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Antartica Lata</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 4.50</p>
+                        <button TypeScript" 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Antatica Lata"
+                            data-price="4.50"
+                        >
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/refri-3.png" 
+                    alt="Duplo Bacon"
+                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Monster Lata</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 10.50</p>
+                        <button TypeScript" 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Antatica Lata"
+                            data-price="10.50"
+                        >
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/refri-4.png" 
+                    alt="Duplo Bacon"
+                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+                />
+                <div>
+                    <p class="font-bold">RedBull Lata</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 12.50</p>
+                        <button TypeScript" 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="RedBull Lata"
+                            data-price="12.50"
+                        >
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/refri-5.png" 
+                    alt="Duplo Bacon"
+                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Coca Cola 1L</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 12.00</p>
+                        <button TypeScript" 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Coca Litro"
+                            data-price="12.00"
+                        >
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/refri-6.png" 
+                    alt="Duplo Bacon"
+                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Antartica 1L</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 10.00</p>
+                        <button TypeScript" 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Antartica Litro"
+                            data-price="10.00"
+                        >
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </body>
 </html>
