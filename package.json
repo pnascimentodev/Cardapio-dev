@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./styles/style.css -o ./styles/output.css --watch"
+
+    "dev": "npx tailwindcss -i ./styles/style.css -o ./styles/output.css --watch",
+    "start": "concurrently \"npm run dev\" \"live-server --no-browser --port=3000 ./\""
   },
   "keywords": [],
   "author": "",
@@ -11,6 +13,7 @@
   "type": "commonjs",
   "description": "",
   "devDependencies": {
+    "concurrently": "^9.1.2",
     "tailwindcss": "^4.0.6"
   },
   "dependencies": {
