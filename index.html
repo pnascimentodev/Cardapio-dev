@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +41,7 @@
             <div class="flex gap-2">
                 <img 
                     src="./assets/hamb-1.png" 
-                    alt="Duplo Bacon"
+                    alt="JavaScript"
                     class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
                 />
                 <div>
@@ -53,6 +54,8 @@
                             class="bg-gray-900 px-5 rounded add-to-cart-btn"
                             data-name="JavaScript"
                             data-price="18.90"
+                            data-category="food"
+                            data-image="./assets/hamb-1.png"
                         >
                             <i class="fas fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -65,7 +68,7 @@
             <div class="flex gap-2">
                 <img 
                     src="./assets/hamb-2.png" 
-                    alt="Duplo Bacon"
+                    alt="TypeScript"
                     class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
                 />
                 <div>
@@ -74,10 +77,12 @@
         
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 21.90</p>
-                        <button TypeScript" 
+                        <button
                             class="bg-gray-900 px-5 rounded add-to-cart-btn"
                             data-name="TypeScript"
                             data-price="21.90"
+                            data-category="food"
+                            data-image="./assets/hamb-2.png"
                         >
                             <i class="fas fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -90,7 +95,7 @@
             <div class="flex gap-2">
                 <img 
                     src="./assets/hamb-3.png" 
-                    alt="Duplo Bacon"
+                    alt="Nodejs"
                     class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
                 />
                 <div>
@@ -99,10 +104,12 @@
         
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 16.90</p>
-                        <button TypeScript" 
+                        <button 
                             class="bg-gray-900 px-5 rounded add-to-cart-btn"
                             data-name="Nodejs"
                             data-price="16.90"
+                            data-category="food"
+                            data-image="./assets/hamb-3.png"
                         >
                             <i class="fas fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -115,7 +122,7 @@
             <div class="flex gap-2">
                 <img 
                     src="./assets/hamb-4.png" 
-                    alt="Duplo Bacon"
+                    alt="Angular"
                     class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
                 />
                 <div>
@@ -124,10 +131,12 @@
         
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 25.90</p>
-                        <button TypeScript" 
+                        <button
                             class="bg-gray-900 px-5 rounded add-to-cart-btn"
                             data-name="Angular"
                             data-price="25.90"
+                            data-category="food"
+                            data-image="./assets/hamb-4.png"
                         >
                             <i class="fas fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -140,7 +149,7 @@
             <div class="flex gap-2">
                 <img 
                     src="./assets/hamb-5.png" 
-                    alt="Duplo Bacon"
+                    alt="Java"
                     class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
                 />
                 <div>
@@ -149,10 +158,12 @@
         
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 32.90</p>
-                        <button TypeScript" 
+                        <button
                             class="bg-gray-900 px-5 rounded add-to-cart-btn"
                             data-name="Java"
                             data-price="32.90"
+                            data-category="food"
+                            data-image="./assets/hamb-5.png"
                         >
                             <i class="fas fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -164,7 +175,7 @@
         <div class="flex gap-2">
             <img 
                 src="./assets/hamb-6.png" 
-                alt="Duplo Bacon"
+                alt="React"
                 class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
             />
             <div>
@@ -177,6 +188,8 @@
                         class="bg-gray-900 px-5 rounded add-to-cart-btn"
                         data-name="React"
                         data-price="18.90"
+                        data-category="food"
+                        data-image="./assets/hamb-6.png"
                     >
                         <i class="fas fa-cart-plus text-lg text-white"></i>
                     </button>
@@ -189,7 +202,7 @@
         <div class="flex gap-2">
             <img 
                 src="./assets/hamb-7.png" 
-                alt="Duplo Bacon"
+                alt="Python"
                 class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
             />
             <div>
@@ -198,10 +211,12 @@
     
                 <div class="flex items-center gap-2 justify-between mt-3">
                     <p class="font-bold text-lg">R$ 22.90</p>
-                    <button TypeScript" 
+                    <button
                         class="bg-gray-900 px-5 rounded add-to-cart-btn"
                         data-name="Python"
                         data-price="22.90"
+                        data-category="food"
+                        data-image="./assets/hamb-7.png"
                     >
                         <i class="fas fa-cart-plus text-lg text-white"></i>
                     </button>
@@ -214,7 +229,7 @@
         <div class="flex gap-2">
             <img 
                 src="./assets/hamb-8.png" 
-                alt="Duplo Bacon"
+                alt=".Net Vegan"
                 class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
             />
             <div>
@@ -223,10 +238,12 @@
     
                 <div class="flex items-center gap-2 justify-between mt-3">
                     <p class="font-bold text-lg">R$ 16.90</p>
-                    <button TypeScript" 
+                    <button
                         class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                        data-name="Node.j"
+                        data-name=".Net Vegan"
                         data-price="16.90"
+                        data-category="food"
+                        data-image="./assets/hamb-8.png"
                     >
                         <i class="fas fa-cart-plus text-lg text-white"></i>
                     </button>
@@ -237,7 +254,9 @@
         
         </main>
 
-        <div class="mx-auto max-w-7x1 pc-2 my-2">
+        <div 
+        class="mx-auto max-w-7x1 pc-2 my-2"
+        id="drinks-menu">
             <h2 class="font-bold text-3x1 md:text-4xl text-center">Nossas bebidas</h2>
         </div>
 
@@ -245,17 +264,19 @@
             <div class="flex gap-2">
                 <img 
                     src="./assets/refri-1.png" 
-                    alt="Duplo Bacon"
+                    alt="Coca Lata"
                     class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
                 />
                 <div>
                     <p class="font-bold">Coca Cola Lata</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 6.50</p>
-                        <button TypeScript" 
+                        <button
                             class="bg-gray-900 px-5 rounded add-to-cart-btn"
                             data-name="Coca Lata"
                             data-price="6.50"
+                            data-category="drinks"
+                            data-image="./assets/refri-1.png"
                         >
                             <i class="fas fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -265,17 +286,19 @@
             <div class="flex gap-2">
                 <img 
                     src="./assets/refri-2.png" 
-                    alt="Duplo Bacon"
+                    alt="Antatica Lata"
                     class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
                 />
                 <div>
                     <p class="font-bold">Antartica Lata</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 4.50</p>
-                        <button TypeScript" 
+                        <button
                             class="bg-gray-900 px-5 rounded add-to-cart-btn"
                             data-name="Antatica Lata"
                             data-price="4.50"
+                            data-category="drinks"
+                            data-image="./assets/refri-2.png"
                         >
                             <i class="fas fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -285,17 +308,19 @@
             <div class="flex gap-2">
                 <img 
                     src="./assets/refri-3.png" 
-                    alt="Duplo Bacon"
+                    alt="Monster Lata"
                     class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
                 />
                 <div>
                     <p class="font-bold">Monster Lata</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 10.50</p>
-                        <button TypeScript" 
+                        <button
                             class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                            data-name="Antatica Lata"
+                            data-name="Monster Lata"
                             data-price="10.50"
+                            data-category="drinks"
+                            data-image="./assets/refri-3.png"
                         >
                             <i class="fas fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -305,17 +330,19 @@
             <div class="flex gap-2">
                 <img 
                     src="./assets/refri-4.png" 
-                    alt="Duplo Bacon"
+                    alt="RedBull Lata"
                     class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
                 />
                 <div>
                     <p class="font-bold">RedBull Lata</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 12.50</p>
-                        <button TypeScript" 
+                        <button
                             class="bg-gray-900 px-5 rounded add-to-cart-btn"
                             data-name="RedBull Lata"
                             data-price="12.50"
+                            data-category="drinks"
+                            data-image="./assets/refri-4.png"
                         >
                             <i class="fas fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -325,17 +352,19 @@
             <div class="flex gap-2">
                 <img 
                     src="./assets/refri-5.png" 
-                    alt="Duplo Bacon"
+                    alt="Coca Litro"
                     class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
                 />
                 <div>
                     <p class="font-bold">Coca Cola 1L</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 12.00</p>
-                        <button TypeScript" 
+                        <button
                             class="bg-gray-900 px-5 rounded add-to-cart-btn"
                             data-name="Coca Litro"
                             data-price="12.00"
+                            data-category="drinks"
+                            data-image="./assets/refri-5.png"
                         >
                             <i class="fas fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -345,17 +374,19 @@
             <div class="flex gap-2">
                 <img 
                     src="./assets/refri-6.png" 
-                    alt="Duplo Bacon"
+                    alt="Antartica Litro"
                     class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
                 />
                 <div>
                     <p class="font-bold">Antartica 1L</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 10.00</p>
-                        <button TypeScript" 
+                        <button
                             class="bg-gray-900 px-5 rounded add-to-cart-btn"
                             data-name="Antartica Litro"
                             data-price="10.00"
+                            data-category="drinks"
+                            data-image="./assets/refri-6.png"
                         >
                             <i class="fas fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -367,60 +398,74 @@
 
     <!-- Modal Cart-->
 
-    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
-        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
-            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
-
-            <div id="cart-items" class="flex -justify-between mb-2 flex-col"></div>
-
-            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
-
-            <p class="font-bold mt-4">Endereço de entrega:</p>
-                <div class="grid grid-cols-2 gap-4">
-                    <input 
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] flex items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-8 rounded-lg shadow-lg min-w-[90%] md:min-w-[600px] max-h-[80vh] overflow-y-auto">
+            <h2 class="text-center font-bold text-3xl mb-4">
+                <i class="fa fa-shopping-basket text-blue-500" aria-hidden="true"></i> Meu carrinho
+            </h2>
+    
+            <div id="cart-items" class="flex flex-col mb-4"></div>
+    
+            <p class="font-bold text-lg">
+                <i class="fa fa-university text-green-500" aria-hidden="true"></i> Total: <span id="cart-total">0.00</span>
+            </p>
+    
+            <p class="font-bold text-lg mt-4">
+                <i class="fa fa-location-arrow text-red-500" aria-hidden="true"></i> Endereço de entrega:
+            </p>
+    
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <input 
                     type="text"
                     placeholder="Rua"
                     id="street-address"
-                    class="w-full border-2 p-1 rounded my-1"
-                    />
-                    <input 
+                    class="w-full border-2 border-gray-300 p-2 rounded-md focus:ring focus:ring-green-200"
+                />
+                <input 
                     type="text"
-                    placeholder="Numero"
+                    placeholder="Número"
                     id="number-address"
-                    class="w-full border-2 p-1 rounded my-1"
-                    />
-                    <input 
+                    class="w-full border-2 border-gray-300 p-2 rounded-md focus:ring focus:ring-green-200"
+                />
+                <input 
                     type="text"
                     placeholder="Bairro"
                     id="district-address"
-                    class="w-full border-2 p-1 rounded my-1"
-                    />
-                    <input 
+                    class="w-full border-2 border-gray-300 p-2 rounded-md focus:ring focus:ring-green-200"
+                />
+                <input 
                     type="text"
                     placeholder="Complemento"
                     id="complement-address"
-                    class="w-full border-2 p-1 rounded my-1"
-                    />
-                    <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
-                </div>
-
-                <div class="flex items-center justify-center mt-5 w-full">
-                    <button id="close-modal-btn" class="bg-red-500 text-white px-4 py-1 rounded mr-4"> Fechar </button>
-                    <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded"> Finalizar pedido </button>
-                </div>
-                
-
+                    class="w-full border-2 border-gray-300 p-2 rounded-md focus:ring focus:ring-green-200"
+                />
+            </div>
+    
+            <p class="text-red-500 hidden text-center" id="address-warn">Por favor, preencha todos os dados de endereço!</p>
+    
+            <div class="flex items-center justify-center mt-6 w-full">
+                <button id="close-modal-btn" class="bg-red-500 text-white px-6 py-2 rounded-md shadow-md hover:bg-red-600 transition">
+                    <i class="fa fa-times-circle" aria-hidden="true"></i> Fechar
+                </button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-6 py-2 rounded-md shadow-md ml-4 hover:bg-green-600 transition">
+                    Finalizar pedido <i class="fa fa-check-circle" aria-hidden="true"></i>
+                </button>
+            </div>
         </div>
     </div>
+    
 
     <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
         <button 
         class="flex items-center gap-2 text-white font-bold"
         id="cart-btn">
-            (<span id="cart-count">0</span>)
-            Veja meu carrinho
-            <i class="fa fa-cart-plus text-lg text-white"></i>
+            <span id="cart-count">0</span>
+            Itens no meu carrinho
+            <i class="fa fa-shopping-cart" text-lg text-white"></i>
         </button>
     </footer>
+
+    <script src="/services/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>
