@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menu = document.getElementById('menu');
-    const drinksMenu = document.getElementById('drinks-menu');
     const cartBtn = document.getElementById('cart-btn');
     const cartModal = document.getElementById('cart-modal');
     const cartItemsContainer = document.getElementById('cart-items');
@@ -45,20 +44,20 @@ document.addEventListener("DOMContentLoaded", function () {
         if (parentButton) {
             const name = parentButton.getAttribute('data-name');
             const price = parseFloat(parentButton.getAttribute('data-price'));
-            const category = parentButton.getAttribute('data-category');  // Obtendo a categoria diretamente
-            const image = parentButton.getAttribute('data-image');  // Obtendo o caminho da imagem
+            const category = parentButton.getAttribute('data-category');
+            const image = parentButton.getAttribute('data-image');
             addToCart(name, price, category, image);
         }
     });
 
     // Add to cart function
-    function addToCart(name, price, category, image) {  // Adicionando imagem aqui
+    function addToCart(name, price, category, image) {
         const existingItem = cart.find(item => item.name === name);
 
         if (existingItem) {
             existingItem.quantity += 1;
         } else {
-            cart.push({ name, price, quantity: 1, category, image });  // Armazenando imagem aqui
+            cart.push({ name, price, quantity: 1, category, image });
         }
 
         updateCartModal();
@@ -85,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
 
                 <div class="ml-auto"> <!-- Usando ml-auto para empurrar para a direita -->
-                    <button class="remove-from-cart-btn bg-red-500 text-white p-2 rounded-full shadow hover:bg-red-600 transition" data-name="${item.name}"> <!-- Botão de remoção com fundo vermelho, borda arredondada e sombra -->
+                    <button class="remove-from-cart-btn bg-red-500 text-white p-2 rounded-full shadow hover:bg-red-900 transition" data-name="${item.name}"> <!-- Botão de remoção com fundo vermelho, borda arredondada e sombra -->
                         <i class="fa fa-trash" aria-hidden="true"></i>
                     </button>
                 </div>
@@ -175,14 +174,14 @@ document.addEventListener("DOMContentLoaded", function () {
                       
             return;
         }
-
+    
         if (cart.length === 0) {
             checkoutBtn.disabled = true;
             checkoutBtn.classList.add("bg-gray-500", "cursor-not-allowed");
         }
-
+    
         let emptyFields = false;
-
+    
         addressInputs.forEach(input => {
             if (input) {
                 if (input.value.trim() === '') {
@@ -193,38 +192,54 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         });
-
+    
         if (emptyFields) {
             addressWarn.classList.remove("hidden");
             return;
         } else {
             addressWarn.classList.add("hidden");
         }
-
-        // Geração do número do pedido
+    
         const orderNumber = Math.floor(1000 + Math.random() * 9000);
-
-        // Api for WhatsApp
+    
         const cartItems = cart.map((item) => {
-            const emoji = item.category === "drinks" ? "🥤" : "🍔";  // Condição para escolher o emoji
+            const emoji = item.category === "drinks" ? "🥤" : "🍔";
             return (
                 `${emoji} *${item.name}* \nQuantidade: ${item.quantity} \nPreço: R$${item.price.toFixed(2)}\n`
             );
         }).join("\n");
-
+    
         const total = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0).toLocaleString('pt-BR', {
             style: 'currency',
             currency: 'BRL'
         });
-
+    
         const message = `🟢 Número do pedido: ${orderNumber}\n\nOlá! Meu pedido é:\n\n${cartItems}\n💵 *Valor total:* ${total}\n🏠 *Endereço de entrega:*\n${streetAddress.value}, ${numberAddress.value} - ${districtAddress.value}\nComplemento: ${complementAddress.value}\n\n🛵 *Por favor, entregue o mais rápido possível!* 😊`;
         const phone = "8188859162";
         
         window.open(`https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`, '_blank');
-
+    
         cart = [];
         updateCartModal();
-    });
+
+        Toastify({
+            text: "Pedido concluído com sucesso!",
+            duration: 3000,
+            close: true,
+            gravity: "center",
+            position: "center",
+            stopOnFocus: true,
+            style: {
+                background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            callback: function() {
+                const modal = document.getElementById('modal-id');
+                if (modal) {
+                    modal.classList.add('hidden');
+                }
+            }
+        }).showToast();
+    });    
 
     // Check the schedule
     function CheckRestaurantOpen(){

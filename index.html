@@ -17,47 +17,176 @@
             <img 
             src="./assets/logo.jpg" 
             alt="Logo do Burguer For Devs"
-            class="w-32 h32 rounded-full shadow-lg hover:scale-110 duration-200"
+            class="w-32 h-32 rounded-full shadow-xl transform transition duration-500 hover:scale-110"
             />
-            <h1 class="text-3x1 mt-4 mb-2 font-bold text-white">TECH BURGUER</h1>
+            <h1 class="text-5xl mt-4 mb-2 font-extrabold text-white tracking-wide">TECH BURGUER</h1>
 
-            <span class="text-white font-medium">Rua Dev - 10, Recife - PE</span>
+            <span class="text-white text-xl font-semibold">Rua Dev - 10, Recife - PE</span>
 
-            <div class="bg-green-500 px-4 py-1 rounded-lg mt-5" id="date-span">
-                <span class="text-white font-medium"> Seg á Dom - 18:00 as 22:00</span>
+            <div class="bg-green-500 px-8 py-3 rounded-full mt-5 shadow-lg transition transform duration-500 hover:scale-105" id="date-span">
+                <span class="text-white font-semibold"> Seg á Dom - 18:00 as 22:00</span>
             </div>
         </div> 
     </header>
 
-    <h2 class="text-4xl md:text-4xl font-bold text-center mt-9 mb-6">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center mt-12 mb-8 text-gray-800">
         Nossos Burguers
     </h2>
+    
 
     <div id="menu">
-
         <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
-    
+        
             <!-- PRODUTO-->
-            <div class="flex gap-2">
+            <div class="bg-white rounded-lg shadow-md p-4 flex gap-4 hover:shadow-lg transition duration-300">
                 <img 
                     src="./assets/hamb-1.png" 
                     alt="JavaScript"
                     class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
                 />
                 <div>
-                    <p class="font-bold">JavaScript</p>
+                    <p class="font-bold text-lg">JavaScript</p>
                     <p class="text-sm">Dois burguers de 160g, queijo prato, e maionese da casa, pão brioche e salada a vontade.</p>
-        
                     <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 18.90</p>
+                        <p class="font-bold text-xl">R$ 18.90</p>
                         <button 
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            class="bg-green-500 px-5 py-2 text-white rounded-full add-to-cart-btn hover:bg-green-600 transition duration-300"
                             data-name="JavaScript"
                             data-price="18.90"
                             data-category="food"
                             data-image="./assets/hamb-1.png"
                         >
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                            <i class="fas fa-cart-plus text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> 
+            <!-- FIM DO PRODUTO -->
+            
+            <!-- PRODUTO -->
+            <div class="bg-white rounded-lg shadow-md p-4 flex gap-4 hover:shadow-lg transition duration-300">
+                <img 
+                    src="./assets/hamb-2.png" 
+                    alt="TypeScript"
+                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+                />
+                <div>
+                    <p class="font-bold text-lg">TypeScript</p>
+                    <p class="text-sm">Dois burguers de 160g, bacon, queijo cheddar, e maionese da casa, pão brioche e salada a vontade.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-xl">R$ 21.90</p>
+                        <button
+                            class="bg-green-500 px-5 py-2 text-white rounded-full add-to-cart-btn hover:bg-green-600 transition duration-300"
+                            data-name="TypeScript"
+                            data-price="21.90"
+                            data-category="food"
+                            data-image="./assets/hamb-2.png"
+                        >
+                            <i class="fas fa-cart-plus text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> 
+            <!-- FIM DO PRODUTO -->
+    
+            <!-- PRODUTO -->
+            <div class="bg-white rounded-lg shadow-md p-4 flex gap-4 hover:shadow-lg transition duration-300">
+                <img 
+                    src="./assets/hamb-3.png" 
+                    alt="Nodejs"
+                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+                />
+                <div>
+                    <p class="font-bold text-lg">Node.js</p>
+                    <p class="text-sm">Dois smashs burguers de 120g, queijo cheddar, cream cheese, maionese da casa e pão brioche.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-xl">R$ 16.90</p>
+                        <button 
+                            class="bg-green-500 px-5 py-2 text-white rounded-full add-to-cart-btn hover:bg-green-600 transition duration-300"
+                            data-name="Nodejs"
+                            data-price="16.90"
+                            data-category="food"
+                            data-image="./assets/hamb-3.png"
+                        >
+                            <i class="fas fa-cart-plus text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> 
+            <!-- FIM DO PRODUTO -->
+    
+            <!-- PRODUTO -->
+            <div class="bg-white rounded-lg shadow-md p-4 flex gap-4 hover:shadow-lg transition duration-300">
+                <img 
+                    src="./assets/hamb-4.png" 
+                    alt="Angular"
+                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+                />
+                <div>
+                    <p class="font-bold text-lg">Angular</p>
+                    <p class="text-sm">Frango empanado de 160g, picles, queijo prato, maionese da casa, pão brioche e salada a vontade.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-xl">R$ 25.90</p>
+                        <button
+                            class="bg-green-500 px-5 py-2 text-white rounded-full add-to-cart-btn hover:bg-green-600 transition duration-300"
+                            data-name="Angular"
+                            data-price="25.90"
+                            data-category="food"
+                            data-image="./assets/hamb-4.png"
+                        >
+                            <i class="fas fa-cart-plus text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> 
+            <!-- FIM DO PRODUTO -->
+    
+            <!-- PRODUTO -->
+            <div class="bg-white rounded-lg shadow-md p-4 flex gap-4 hover:shadow-lg transition duration-300">
+                <img 
+                    src="./assets/hamb-5.png" 
+                    alt="Java"
+                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+                />
+                <div>
+                    <p class="font-bold text-lg">Java</p>
+                    <p class="text-sm">Burguer de 160g, picles, queijo mussarela, cebola crisp, maionese da casa, pão brioche e salada a vontade.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-xl">R$ 32.90</p>
+                        <button
+                            class="bg-green-500 px-5 py-2 text-white rounded-full add-to-cart-btn hover:bg-green-600 transition duration-300"
+                            data-name="Java"
+                            data-price="32.90"
+                            data-category="food"
+                            data-image="./assets/hamb-5.png"
+                        >
+                            <i class="fas fa-cart-plus text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> 
+            <!-- FIM DO PRODUTO -->
+    
+            <!-- PRODUTO -->
+            <div class="bg-white rounded-lg shadow-md p-4 flex gap-4 hover:shadow-lg transition duration-300">
+                <img 
+                    src="./assets/hamb-6.png" 
+                    alt="React"
+                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+                />
+                <div>
+                    <p class="font-bold text-lg">React</p>
+                    <p class="text-sm">Dois smashs de 120g, queijo prato, ovo, maionese da casa, pão brioche e salada a vontade.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-xl">R$ 18.90</p>
+                        <button 
+                            class="bg-green-500 px-5 py-2 text-white rounded-full add-to-cart-btn hover:bg-green-600 transition duration-300"
+                            data-name="React"
+                            data-price="18.90"
+                            data-category="food"
+                            data-image="./assets/hamb-6.png"
+                        >
+                            <i class="fas fa-cart-plus text-lg"></i>
                         </button>
                     </div>
                 </div>
@@ -65,337 +194,202 @@
             <!-- FIM DO PRODUTO -->
         
             <!-- PRODUTO -->
-            <div class="flex gap-2">
+            <div class="bg-white rounded-lg shadow-md p-4 flex gap-4 hover:shadow-lg transition duration-300">
                 <img 
-                    src="./assets/hamb-2.png" 
-                    alt="TypeScript"
+                    src="./assets/hamb-7.png" 
+                    alt="Python"
                     class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
                 />
                 <div>
-                    <p class="font-bold">TypeScript</p>
-                    <p class="text-sm">Dois burguers de 160g, bacon, queijo cheddar, e maionese da casa, pão brioche e salada a vontade.</p>
-        
+                    <p class="font-bold text-lg">Python</p>
+                    <p class="text-sm">Burguer de 160g, bacon, onion rings, queijo cheddar, e maionese da casa e pão brioche.</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 21.90</p>
+                        <p class="font-bold text-xl">R$ 22.90</p>
                         <button
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                            data-name="TypeScript"
-                            data-price="21.90"
+                            class="bg-green-500 px-5 py-2 text-white rounded-full add-to-cart-btn hover:bg-green-600 transition duration-300"
+                            data-name="Python"
+                            data-price="22.90"
                             data-category="food"
-                            data-image="./assets/hamb-2.png"
+                            data-image="./assets/hamb-7.png"
                         >
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                            <i class="fas fa-cart-plus text-lg"></i>
                         </button>
                     </div>
                 </div>
             </div> 
-            <!-- FIM DO FIM DO PRODUTO -->
+            <!-- FIM DO PRODUTO -->
 
             <!-- PRODUTO -->
-            <div class="flex gap-2">
+            <div class="bg-white rounded-lg shadow-md p-4 flex gap-4 hover:shadow-lg transition duration-300">
                 <img 
-                    src="./assets/hamb-3.png" 
-                    alt="Nodejs"
+                    src="./assets/hamb-8.png" 
+                    alt="Python"
                     class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
                 />
                 <div>
-                    <p class="font-bold">Node.js</p>
-                    <p class="text-sm">Dois smashs burguers de 120g, queijo cheddar, cream cheese, maionese da casa e pão brioche.</p>
-        
+                    <p class="font-bold text-lg">.Net Vegan</p>
+                    <p class="text-sm">Burguer vegano feito de soja, salada, cenoura e maionese de abacate, e pão feito de batata.</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 16.90</p>
-                        <button 
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                            data-name="Nodejs"
+                        <p class="font-bold text-xl">R$ 16.90</p>
+                        <button
+                            class="bg-green-500 px-5 py-2 text-white rounded-full add-to-cart-btn hover:bg-green-600 transition duration-300"
+                            data-name="Net Vegan"
                             data-price="16.90"
                             data-category="food"
-                            data-image="./assets/hamb-3.png"
+                            data-image="./assets/hamb-7.png"
                         >
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                            <i class="fas fa-cart-plus text-lg"></i>
                         </button>
                     </div>
                 </div>
             </div> 
-            <!-- FIM DO FIM DO PRODUTO -->
+            <!-- FIM DO PRODUTO -->
+</main>
+<div class="mx-auto max-w-7xl px-2 my-2" id="drinks-menu">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center mt-12 mb-8 text-gray-800">
+        Nossas Bebidas
+    </h2>
+</div>
 
-            <!-- PRODUTO -->
-            <div class="flex gap-2">
-                <img 
-                    src="./assets/hamb-4.png" 
-                    alt="Angular"
-                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
-                />
-                <div>
-                    <p class="font-bold">Angular</p>
-                    <p class="text-sm">Frango empanado de 160g, picles, queijo prato, maionese da casa, pão brioche e salada a vontade.</p>
-        
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 25.90</p>
-                        <button
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                            data-name="Angular"
-                            data-price="25.90"
-                            data-category="food"
-                            data-image="./assets/hamb-4.png"
-                        >
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div> 
-            <!-- FIM DO FIM DO PRODUTO -->
-
-                    <!-- PRODUTO -->
-            <div class="flex gap-2">
-                <img 
-                    src="./assets/hamb-5.png" 
-                    alt="Java"
-                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
-                />
-                <div>
-                    <p class="font-bold">Java</p>
-                    <p class="text-sm">Burguer de 160g, picles, queijo mussarela, cebola crisp, maionese da casa, pão brioche e salada a vontade.</p>
-        
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 32.90</p>
-                        <button
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                            data-name="Java"
-                            data-price="32.90"
-                            data-category="food"
-                            data-image="./assets/hamb-5.png"
-                        >
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div> 
-            <!-- FIM DO FIM DO PRODUTO -->
-        <!-- PRODUTO-->
-        <div class="flex gap-2">
-            <img 
-                src="./assets/hamb-6.png" 
-                alt="React"
-                class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
-            />
-            <div>
-                <p class="font-bold">React</p>
-                <p class="text-sm">Dois smashs de 120g, queijo prato, ovo, maionese da casa, pão brioche e salada a vontade.</p>
-    
-                <div class="flex items-center gap-2 justify-between mt-3">
-                    <p class="font-bold text-lg">R$ 18.90</p>
-                    <button 
-                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                        data-name="React"
-                        data-price="18.90"
-                        data-category="food"
-                        data-image="./assets/hamb-6.png"
-                    >
-                        <i class="fas fa-cart-plus text-lg text-white"></i>
-                    </button>
-                </div>
-            </div>
-        </div> 
-        <!-- FIM DO PRODUTO -->
-    
-        <!-- PRODUTO -->
-        <div class="flex gap-2">
-            <img 
-                src="./assets/hamb-7.png" 
-                alt="Python"
-                class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
-            />
-            <div>
-                <p class="font-bold">Python</p>
-                <p class="text-sm">Burguer de 160g, bacon, onion rings, queijo cheddar, e maionese da casa e pão brioche.</p>
-    
-                <div class="flex items-center gap-2 justify-between mt-3">
-                    <p class="font-bold text-lg">R$ 22.90</p>
-                    <button
-                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                        data-name="Python"
-                        data-price="22.90"
-                        data-category="food"
-                        data-image="./assets/hamb-7.png"
-                    >
-                        <i class="fas fa-cart-plus text-lg text-white"></i>
-                    </button>
-                </div>
-            </div>
-        </div> 
-        <!-- FIM DO FIM DO PRODUTO -->
-
-        <!-- PRODUTO -->
-        <div class="flex gap-2">
-            <img 
-                src="./assets/hamb-8.png" 
-                alt=".Net Vegan"
-                class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
-            />
-            <div>
-                <p class="font-bold">.Net Vegan</p>
-                <p class="text-sm">Burguer vegano feito de soja, salada, cenoura, e maionese de abacate, pão feito de batata.</p>
-    
-                <div class="flex items-center gap-2 justify-between mt-3">
-                    <p class="font-bold text-lg">R$ 16.90</p>
-                    <button
-                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                        data-name=".Net Vegan"
-                        data-price="16.90"
-                        data-category="food"
-                        data-image="./assets/hamb-8.png"
-                    >
-                        <i class="fas fa-cart-plus text-lg text-white"></i>
-                    </button>
-                </div>
-            </div>
-        </div> 
-        <!-- FIM DO FIM DO PRODUTO -->
-        
-        </main>
-
-        <div 
-        class="mx-auto max-w-7x1 pc-2 my-2"
-        id="drinks-menu">
-            <h2 class="font-bold text-3x1 md:text-4xl text-center">Nossas bebidas</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+    <!-- PRODUTO -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex justify-between items-center hover:shadow-lg transition duration-300">
+        <img 
+            src="./assets/refri-1.png" 
+            alt="Coca Lata"
+            class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+        />
+        <div class="flex-1 ml-4">
+            <p class="font-bold text-lg">Coca Cola Lata</p>
+            <p class="font-bold text-xl mt-3">R$ 6.50</p>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
-            <div class="flex gap-2">
-                <img 
-                    src="./assets/refri-1.png" 
-                    alt="Coca Lata"
-                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
-                />
-                <div>
-                    <p class="font-bold">Coca Cola Lata</p>
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 6.50</p>
-                        <button
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                            data-name="Coca Lata"
-                            data-price="6.50"
-                            data-category="drinks"
-                            data-image="./assets/refri-1.png"
-                        >
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="flex gap-2">
-                <img 
-                    src="./assets/refri-2.png" 
-                    alt="Antatica Lata"
-                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
-                />
-                <div>
-                    <p class="font-bold">Antartica Lata</p>
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 4.50</p>
-                        <button
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                            data-name="Antatica Lata"
-                            data-price="4.50"
-                            data-category="drinks"
-                            data-image="./assets/refri-2.png"
-                        >
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="flex gap-2">
-                <img 
-                    src="./assets/refri-3.png" 
-                    alt="Monster Lata"
-                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
-                />
-                <div>
-                    <p class="font-bold">Monster Lata</p>
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 10.50</p>
-                        <button
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                            data-name="Monster Lata"
-                            data-price="10.50"
-                            data-category="drinks"
-                            data-image="./assets/refri-3.png"
-                        >
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="flex gap-2">
-                <img 
-                    src="./assets/refri-4.png" 
-                    alt="RedBull Lata"
-                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
-                />
-                <div>
-                    <p class="font-bold">RedBull Lata</p>
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 12.50</p>
-                        <button
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                            data-name="RedBull Lata"
-                            data-price="12.50"
-                            data-category="drinks"
-                            data-image="./assets/refri-4.png"
-                        >
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="flex gap-2">
-                <img 
-                    src="./assets/refri-5.png" 
-                    alt="Coca Litro"
-                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
-                />
-                <div>
-                    <p class="font-bold">Coca Cola 1L</p>
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 12.00</p>
-                        <button
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                            data-name="Coca Litro"
-                            data-price="12.00"
-                            data-category="drinks"
-                            data-image="./assets/refri-5.png"
-                        >
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="flex gap-2">
-                <img 
-                    src="./assets/refri-6.png" 
-                    alt="Antartica Litro"
-                    class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
-                />
-                <div>
-                    <p class="font-bold">Antartica 1L</p>
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 10.00</p>
-                        <button
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                            data-name="Antartica Litro"
-                            data-price="10.00"
-                            data-category="drinks"
-                            data-image="./assets/refri-6.png"
-                        >
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <button
+            class="bg-green-500 px-5 py-2 text-white rounded-full add-to-cart-btn hover:bg-green-600 transition duration-300"
+            data-name="Coca Lata"
+            data-price="6.50"
+            data-category="drinks"
+            data-image="./assets/refri-1.png"
+        >
+            <i class="fas fa-cart-plus text-lg"></i>
+        </button>
     </div>
+    <!-- FIM DO PRODUTO -->
 
+    <!-- PRODUTO -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex justify-between items-center hover:shadow-lg transition duration-300">
+        <img 
+            src="./assets/refri-2.png" 
+            alt="Antartica Lata"
+            class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+        />
+        <div class="flex-1 ml-4">
+            <p class="font-bold text-lg">Antartica Lata</p>
+            <p class="font-bold text-xl mt-3">R$ 4.50</p>
+        </div>
+        <button
+            class="bg-green-500 px-5 py-2 text-white rounded-full add-to-cart-btn hover:bg-green-600 transition duration-300"
+            data-name="Antartica Lata"
+            data-price="4.50"
+            data-category="drinks"
+            data-image="./assets/refri-2.png"
+        >
+            <i class="fas fa-cart-plus text-lg"></i>
+        </button>
+    </div>
+    <!-- FIM DO PRODUTO -->
+
+    <!-- PRODUTO -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex justify-between items-center hover:shadow-lg transition duration-300">
+        <img 
+            src="./assets/refri-3.png" 
+            alt="Monster Lata"
+            class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+        />
+        <div class="flex-1 ml-4">
+            <p class="font-bold text-lg">Monster Lata</p>
+            <p class="font-bold text-xl mt-3">R$ 10.50</p>
+        </div>
+        <button
+            class="bg-green-500 px-5 py-2 text-white rounded-full add-to-cart-btn hover:bg-green-600 transition duration-300"
+            data-name="Monster Lata"
+            data-price="10.50"
+            data-category="drinks"
+            data-image="./assets/refri-3.png"
+        >
+            <i class="fas fa-cart-plus text-lg"></i>
+        </button>
+    </div>
+    <!-- FIM DO PRODUTO -->
+
+    <!-- PRODUTO -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex justify-between items-center hover:shadow-lg transition duration-300">
+        <img 
+            src="./assets/refri-4.png" 
+            alt="RedBull Lata"
+            class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+        />
+        <div class="flex-1 ml-4">
+            <p class="font-bold text-lg">RedBull Lata</p>
+            <p class="font-bold text-xl mt-3">R$ 12.50</p>
+        </div>
+        <button
+            class="bg-green-500 px-5 py-2 text-white rounded-full add-to-cart-btn hover:bg-green-600 transition duration-300"
+            data-name="RedBull Lata"
+            data-price="12.50"
+            data-category="drinks"
+            data-image="./assets/refri-4.png"
+        >
+            <i class="fas fa-cart-plus text-lg"></i>
+        </button>
+    </div>
+    <!-- FIM DO PRODUTO -->
+
+    <!-- PRODUTO -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex justify-between items-center hover:shadow-lg transition duration-300">
+        <img 
+            src="./assets/refri-5.png" 
+            alt="Coca Litro"
+            class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+        />
+        <div class="flex-1 ml-4">
+            <p class="font-bold text-lg">Coca Cola 1L</p>
+            <p class="font-bold text-xl mt-3">R$ 12.00</p>
+        </div>
+        <button
+            class="bg-green-500 px-5 py-2 text-white rounded-full add-to-cart-btn hover:bg-green-600 transition duration-300"
+            data-name="Coca Litro"
+            data-price="12.00"
+            data-category="drinks"
+            data-image="./assets/refri-5.png"
+        >
+            <i class="fas fa-cart-plus text-lg"></i>
+        </button>
+    </div>
+    <!-- FIM DO PRODUTO -->
+
+    <!-- PRODUTO -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex justify-between items-center hover:shadow-lg transition duration-300">
+        <img 
+            src="./assets/refri-6.png" 
+            alt="Antartica Litro"
+            class="w-28 h-28 rounded-md hover:-rotate-3 hover:scale-110 duration-300"
+        />
+        <div class="flex-1 ml-4">
+            <p class="font-bold text-lg">Antartica 1L</p>
+            <p class="font-bold text-xl mt-3">R$ 10.00</p>
+        </div>
+        <button
+            class="bg-green-500 px-5 py-2 text-white rounded-full add-to-cart-btn hover:bg-green-600 transition duration-300"
+            data-name="Antartica Litro"
+            data-price="10.00"
+            data-category="drinks"
+            data-image="./assets/refri-6.png"
+        >
+            <i class="fas fa-cart-plus text-lg"></i>
+        </button>
+    </div>
+    <!-- FIM DO PRODUTO -->
+</div>
     <!-- Modal Cart-->
 
     <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] flex items-center justify-center hidden" id="cart-modal">
@@ -444,7 +438,7 @@
             <p class="text-red-500 hidden text-center" id="address-warn">Por favor, preencha todos os dados de endereço!</p>
     
             <div class="flex items-center justify-center mt-6 w-full">
-                <button id="close-modal-btn" class="bg-red-500 text-white px-6 py-2 rounded-md shadow-md hover:bg-red-600 transition">
+                <button id="close-modal-btn" class="bg-red-500 text-white px-6 py-2 rounded-md shadow-md ml-4 hover:bg-red-900 transition">
                     <i class="fa fa-times-circle" aria-hidden="true"></i> Fechar
                 </button>
                 <button id="checkout-btn" class="bg-green-500 text-white px-6 py-2 rounded-md shadow-md ml-4 hover:bg-green-600 transition">
@@ -455,15 +449,18 @@
     </div>
     
 
-    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
-        <button 
-        class="flex items-center gap-2 text-white font-bold"
+<footer class="w-full bg-red-600 py-4 fixed bottom-0 z-40 flex items-center justify-center shadow-lg">
+    <button 
+        class="flex items-center gap-2 text-white font-extrabold transform transition duration-300 hover:scale-105"
         id="cart-btn">
-            <span id="cart-count">0</span>
-            Itens no meu carrinho
-            <i class="fa fa-shopping-cart" text-lg text-white"></i>
-        </button>
-    </footer>
+        <span id="cart-count" class="bg-white text-red-600 rounded-full w-6 h-6 flex items-center justify-center">
+            0
+        </span>
+        Itens no meu carrinho
+        <i class="fas fa-shopping-cart text-lg"></i>
+    </button>
+</footer>
+
 
     <script src="/services/main.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
